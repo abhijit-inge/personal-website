@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Software Engineer | Personal Website</title>
+  <style>
+    :root {
+      --primary: #1f2937;
+      --secondary: #4b5563;
+      --accent: #3b82f6;
+      --bg: #f9fafb;
+      --white: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--primary);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header {
+      background: var(--white);
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent);
+    }
+
+    header h1 {
+      margin-top: 1rem;
+      font-size: 2rem;
+    }
+
+    header p {
+      max-width: 600px;
+      margin: 0.5rem auto;
+      color: var(--secondary);
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .dark-mode {
+      --primary: #f9fafb;
+      --secondary: #d1d5db;
+      --accent: #60a5fa;
+      --bg: #1f2937;
+      --white: #111827;
+    }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+
+    .project, .blog-post {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .project h3, .blog-post h3 {
+      margin: 0 0 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: var(--white);
+      color: var(--secondary);
+      font-size: 0.9rem;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 1rem;
+      background: var(--accent);
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .toggle-button {
+      margin-top: 1rem;
+      background: none;
+      border: 2px solid var(--accent);
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      color: var(--accent);
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="your-photo.jpg" alt="Your Name" />
+    <h1>Hi, I'm a Software Engineer at AWS</h1>
+    <p>
+      With over 10 years of experience, I specialize in building scalable systems and exploring cutting-edge AI technologies.
+    </p>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#blog">Blog</a>
+      <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
+      <a href="resume.pdf" download>Download Resume</a>
+    </nav>
+    <button class="toggle-button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  </header>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Project Title</h3>
+      <p>Short description of the project, technologies used, and what it accomplishes.</p>
+    </div>
+    <div class="project">
+      <h3>Another Project</h3>
+      <p>Another short description highlighting a different strength or domain.</p>
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2>Blog</h2>
+    <div class="blog-post">
+      <h3>AI Trends in 2025</h3>
+      <p>Insights into the evolving AI landscape. <a href="#">Read more</a></p>
+    </div>
+    <div class="blog-post">
+      <h3>Deploying ML Models at Scale</h3>
+      <p>How to take machine learning projects from prototype to production. <a href="#">Read more</a></p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Your Name. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+
+</body>
+</html>
